@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="header-content">
+        <h1>Teapot Tales</h1>
+        <h3>A sip of serenity in every cup.</h3>
+      </div>
+    </header>
+    <main>
+
+      <section class="product-section" id="product-section">
+       
+      </section>
+
+      <section class="purchase-section" id="purchase-section">
+        <h2 class="purchase-tittle">Your Order</h2>
+        <div class="purchase-container" id="purchase-container">
+       
+        </div>
+          <button class="btn-square btn-square-purchase"          id="btn-purchase">Complete the order
+          </button>
+      </section>
+      <section class="message" id="section-message">
+
+      </section>
+    </main>
+   
+
+    <div class="payment-modal" id="payment-modal">
+      <button class="btn-round btn-round-payment" id="btn-payment-close">
+        <i class="fa-solid fa-close"  id="icon-payment-close"></i>
+      </button>
+        <h2 class="payment-tittle">Enter Card Details</h2>
+        <form class="payment-form" id="payment-form">
+          <input name="name-info"  id="name-info" placeholder="Enter your name" required maxlength="160"  />
+          <input name="card-number" id="card-number" placeholder="Enter card number numbers only, no spaces" required maxlength="16" pattern=".{16,}"  />
+          <input name="cvv" id="cvv" placeholder="Enter CVV" required maxlength="3" pattern=".{3,}"  />
+          <button  class="btn-square btn-square-pay" id="btn-pay">Pay</button>
+        </form>
+    </div>
+
+    <div class="rate-modal" id="rate-modal">
+      <button class="btn-round btn-round-close-rate" id="btn-close-rate">
+        <i class="fa-solid fa-close" id="icon-close-rate"></i>
+      </button>
+      <p class="rate-title"> How is it going so far?</p>
+      <div class="rate-wrap">
+        <button class="btn-round btn-round-rate" id="btn-rate-1">
+          <i class="fa-solid fa-mug-saucer"id="icon-rate-1"></i>
+        </button>
+        <button class="btn-round  btn-round-rate"id="btn-rate-2">
+          <i class="fa-solid fa-mug-saucer" id="icon-rate-2"></i>
+        </button>
+        <button class="btn-round btn-round-rate" id="btn-rate-3">
+          <i class="fa-solid fa-mug-saucer"id="icon-rate-3"></i>
+        </button>
+        <button class="btn-round btn-round-rate"id="btn-rate-4">
+          <i class="fa-solid fa-mug-saucer" id="icon-rate-4"></i>
+        </button>
+        <button class="btn-round btn-round-rate"id="btn-rate-5">
+          <i class="fa-solid fa-mug-saucer" id="icon-rate-5"></i>
+        </button>
+    </div>
+    <div class="rate-btn-wrapper">
+      <button class="btn-square btn-square-submit" id="btn-rate-submit">
+        Submit
+      </button>
+      <button class="btn-square btn-square-cancel" id="btn-rate-cancel">
+        Cancel
+      </button>
+    </div>
+    </div>
+
+    <div class="discount-modal" id="discount-modal">
+      <button class="btn-round btn-round-close" id="btn-close">
+        <i class="fa-solid fa-close"  id="icon-close"></i>
+      </button>
+      <div class="discount-details">
+        <p> Enjoy Free Shipping and Get 15% off purchases over $50!</p>
+        <button class="btn-square btn-square-discount" id="btn-discount">
+          OK
+        </button>
+      </div>  
+    </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
